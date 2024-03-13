@@ -47,7 +47,7 @@
 
 - I believe that a `HTTP 200 OK` response should not mean that the transaction will definitely be successful. It just means that the broadcast service will definitely broadcast it and the transaction will definitely successfully reach the blockchain, but it can still fail on the blockchain.
 
-- However, it is not clear if the HTTP status code requirement is for the status code to reflect if the transaction is going to be successful on the blockchain. If it is so, one way to go about doing it is to keep HTTP connection alive until a response is obtained. However, given that the time required to obtain a response from the blockchain can be long, especially with the retry policy, this approach might take up previous resources, affecting the performance of the broadcast service.
+- However, it is not clear if the HTTP status code requirement is for the status code to reflect if the transaction is going to be successful on the blockchain. If it is so, one way to go about doing it is to keep HTTP connection alive until a response is obtained. However, given that the time required to obtain a response from the blockchain can be long, especially with the retry policy, this approach might take up precious resources, affecting the performance of the broadcast service.
 
 
 ### Admin
